@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+network_sniffer_report.pdf
+*.pcap
+.coverage
+.pytest_cache/
