@@ -1,0 +1,13 @@
+NIDS safe test plan
+
+1. Start Suricata using the instructions in README.md and keep its terminal open.
+2. In a second PowerShell window, ping your own local gateway:
+   ping -n 3 YOUR_GATEWAY_IP
+   Replace YOUR_GATEWAY_IP with the current gateway for your own network.
+3. Check logs/fast.log for "NIDS TEST - ICMP traffic detected".
+4. Run a normal HTTPS connectivity check:
+   curl.exe -I --max-time 15 https://example.com
+5. Refresh the local CSV summary:
+   powershell -ExecutionPolicy Bypass -File .\scripts\summarize-fastlog.ps1
+6. Review generated CSV/logs for local IP addresses before sharing.
+7. Only monitor systems and networks you own or are authorized to test.
