@@ -1,0 +1,16 @@
+Command: python -m unittest discover -s tests -v
+
+Captured local output:
+test_correct_password (test_secure_sample.SecureSampleTests.test_correct_password) ... ok
+test_invalid_username (test_secure_sample.SecureSampleTests.test_invalid_username) ... ok
+test_password_not_stored_plaintext (test_secure_sample.SecureSampleTests.test_password_not_stored_plaintext) ... ok
+test_short_password_rejected (test_secure_sample.SecureSampleTests.test_short_password_rejected) ... ok
+test_sql_metacharacters_are_not_a_query (test_secure_sample.SecureSampleTests.test_sql_metacharacters_are_not_a_query) ... ok
+test_wrong_password (test_secure_sample.SecureSampleTests.test_wrong_password) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests
+
+OK
+
+Note: This text records the automated unit-test output. It is not a screenshot of the manual tests.
