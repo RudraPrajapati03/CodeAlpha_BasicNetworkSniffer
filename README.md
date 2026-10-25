@@ -1,83 +1,30 @@
-# CodeAlpha Basic Network Sniffer
+# CodeAlpha Cyber Security Internship Projects
 
-A Python network packet sniffer for the CodeAlpha Cyber Security Internship Task 1. It captures packets visible to a selected network interface, summarizes protocols, explains recognized packet layers, and creates a PDF report.
+This repository contains two separate projects completed for the CodeAlpha Cyber Security Internship.
 
-## Features
+## Task 1 — Basic Network Sniffer
 
-- Capture a chosen number of packets with Scapy.
-- Show source/destination IP addresses, MAC addresses, ports, protocol, packet length, and detected layers.
-- Explain common protocols: Ethernet, ARP, IPv4, IPv6, TCP, UDP, ICMP, and DNS.
-- Export a PDF report with protocol counts and packet-by-packet analysis.
-- Keep payload previews disabled by default; optionally show only a short printable excerpt.
-- List available interfaces.
-- Include capture notes and privacy limitations in the report.
+Folder: [`BasicNetworkSniffer/`](./BasicNetworkSniffer/)
 
-## Requirements
+A Python packet sniffer built with Scapy that summarizes visible packet metadata and generates a PDF report. See [Task 1 README](./BasicNetworkSniffer/README.md) for setup, usage, tests, and safety notes.
 
-- Python 3.10 or newer recommended.
-- Scapy.
-- ReportLab.
-- A packet capture driver/library: Windows: Npcap; Linux: libpcap support.
-- Appropriate capture permissions.
+## Task 2 — Network Intrusion Detection System (NIDS)
 
-## Setup
+Folder: [`NIDS/`](./NIDS/)
 
-```bash
-python -m venv .venv
+A Suricata-based learning project with a custom ICMP Echo Request alert rule, configuration notes, test report, and a helper script for summarizing `fast.log`. See [NIDS README](./NIDS/README.md).
+
+## Repository layout
+
+```text
+.
+├── BasicNetworkSniffer/  # Task 1: Python packet sniffer and PDF reporting
+├── NIDS/                 # Task 2: Suricata-based NIDS demonstration
+├── .github/workflows/    # Repository CI checks
+├── .gitignore
+└── LICENSE
 ```
 
-Activate on Windows PowerShell with `\.venv\Scripts\Activate.ps1`, Windows CMD with `.venv\Scripts\activate.bat`, or Linux/Kali with `source .venv/bin/activate`.
+## Safety
 
-Install dependencies:
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-## Usage
-
-List interfaces:
-
-```bash
-python sniffer.py --list-interfaces
-```
-
-Capture up to 30 packets, stopping after 30 seconds if the limit is not reached:
-
-```bash
-python sniffer.py --count 30 --timeout 30
-```
-
-Enable a short payload preview only when necessary (payloads can contain private information):
-
-```bash
-python sniffer.py --count 30 --show-payload-preview
-```
-
-Choose an interface or output path with `--interface "Wi-Fi"` and `--output my_packet_report.pdf`.
-
-## Tests
-
-```bash
-python -m unittest discover -s tests -v
-```
-
-Offline unit tests do not replace live capture verification on your own authorized system.
-
-## Output
-
-The default report is `network_sniffer_report.pdf` in the current working directory. It contains capture metadata, protocol summary, packet-by-packet details, a protocol guide, and privacy notes.
-
-## Safety and privacy
-
-Use this tool only on your own device/network or with explicit permission. Do not capture or share other people's traffic without authorization. HTTPS application content is generally encrypted and this tool does not decrypt it. Metadata and payload previews can still be sensitive, so inspect the report before publishing it.
-
-## Internship submission checklist
-
-- [ ] Run the tool on an authorized interface.
-- [ ] Verify the PDF report is created and inspect it for sensitive information.
-- [ ] Add screenshots of your actual successful run if requested.
-- [ ] Record a short video explaining the program, output, and limitations.
-- [ ] Submit through the official CodeAlpha submission form.
-
-Do not claim a successful capture until you have run and verified it on your own computer.
+Use network tools only on devices and networks you own or have explicit permission to monitor. Review generated logs, reports, and captures for sensitive information before sharing.
