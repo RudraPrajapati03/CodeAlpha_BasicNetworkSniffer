@@ -4,10 +4,10 @@
 **Project type:** Defensive awareness and education
 
 ## Overview
-A short training module that teaches learners to recognize phishing, verify suspicious requests, and report messages safely. This project is designed for awareness training only. It does not send emails, collect credentials, or host fake login pages.
+A short training module that teaches learners to recognize phishing messages and fake websites, verify suspicious requests, and report messages safely. This project is designed for awareness training only. It does not send emails, collect credentials, or host fake login pages.
 
 ## Project files
-- [PHISHING_AWARENESS_GUIDE.md](./PHISHING_AWARENESS_GUIDE.md) — objectives, lesson plan, response steps, and evaluation.
+- [PHISHING_AWARENESS_GUIDE.md](./PHISHING_AWARENESS_GUIDE.md) — objectives, lesson plan, fake-website checklist, response steps, and evaluation.
 - [SAFE_EXAMPLES.md](./SAFE_EXAMPLES.md) — fictional examples with red flags and safe responses.
 - [QUIZ.md](./QUIZ.md) — five-question knowledge check and answer key.
 
