@@ -5,12 +5,12 @@ This repository contains three selected CodeAlpha cybersecurity internship proje
 ## Task 1 — Basic Network Sniffer
 Folder: [Task1/](./Task1/)
 
-A Python/Scapy packet-sniffing learning tool with protocol summaries and PDF reporting. Use only on networks and devices you are authorized to monitor.
+A Python/Scapy packet-sniffing learning tool with protocol summaries, offline unit tests, and PDF reporting. Use only on networks and devices you are authorized to monitor.
 
 ## Task 2 — Phishing Awareness Training
 Folder: [Task2/](./Task2/)
 
-A defensive training module with fictional examples, red flags, a safe-response guide, and a five-question quiz. It does not send phishing emails or collect credentials.
+A defensive training module with a lesson plan, fictional examples, warning signs for suspicious emails and fake websites, a safe-response guide, and a five-question quiz. It does not send phishing emails or collect credentials.
 
 ## Task 3 — Secure Coding Review
 Folder: [Task3/](./Task3/)
@@ -21,7 +21,7 @@ An educational comparison of vulnerable and safer Python/SQLite patterns, passwo
 - [ ] Run each project locally and verify the outputs/tests.
 - [ ] Add only genuine screenshots/evidence if requested; inspect them for sensitive data.
 - [ ] Post the internship status on LinkedIn and tag @CodeAlpha as instructed.
-- [ ] Post the required project explanation video(s) on LinkedIn with the repository link(s).
+- [ ] Follow the latest official CodeAlpha submission form/instructions for any additional deliverables.
 - [ ] Submit the completed tasks through the official CodeAlpha submission form.
 
 ## Safety
