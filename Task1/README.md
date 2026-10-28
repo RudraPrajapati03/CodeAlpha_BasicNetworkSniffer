@@ -56,13 +56,15 @@ python sniffer.py --count 30 --show-payload-preview
 
 Choose an interface or output path with `--interface "Wi-Fi"` and `--output my_packet_report.pdf`.
 
-## Tests
+## Offline unit tests
+
+Run from this folder:
 
 ```bash
 python -m unittest discover -s tests -v
 ```
 
-Offline unit tests do not replace live capture verification on your own authorized system.
+These tests use synthetic packets and temporary PDF files; they do not sniff live traffic. Live capture must be verified separately on your own authorized system.
 
 ## Output
 
@@ -74,10 +76,10 @@ Use this tool only on your own device/network or with explicit permission. Do no
 
 ## Internship submission checklist
 
+- [ ] Run the offline tests and verify they pass.
 - [ ] Run the tool on an authorized interface.
 - [ ] Verify the PDF report is created and inspect it for sensitive information.
 - [ ] Add screenshots of your actual successful run if requested.
-- [ ] Record a short video explaining the program, output, and limitations.
-- [ ] Submit through the official CodeAlpha submission form.
+- [ ] Follow the latest official CodeAlpha submission form/instructions for any additional deliverables.
 
 Do not claim a successful capture until you have run and verified it on your own computer.
